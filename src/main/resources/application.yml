@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: Consume Web Service
+     
+
+server:
+  servlet:
+    context-path: /poc-web
+  port: 8081
+
+web:
+  url: http://localhost:8080/
