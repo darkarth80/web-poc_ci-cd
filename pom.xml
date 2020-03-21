@@ -11,9 +11,10 @@
     <groupId>com.softtek</groupId>
     <artifactId>web-poc_ci-cd</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>Web page consuming a rest service.</name>
-    <description>Demo project for Spring Boot</description>
     <packaging>war</packaging>
+    
+    <name>web-poc_ci-cd</name>
+    <description>Web page consuming a rest service.</description>
 
     <properties>
         <java.version>1.8</java.version>
@@ -64,12 +65,12 @@
     <distributionManagement>
         <repository>
             <id>nexus-snapshots</id>
-            <url>http://192.168.138.213:48001/repository/maven-releases/</url>
+            <url>http://local.nexus:48001/repository/maven-releases/</url>
         </repository>
         <snapshotRepository>
             <id>nexus-snapshots</id>
             <name>Nexus snapshots</name>
-            <url>http://192.168.138.213:48001/repository/maven-snapshots/</url>
+            <url>http://local.nexus:48001/repository/maven-snapshots/</url>
         </snapshotRepository>
     </distributionManagement>
 
@@ -95,7 +96,7 @@
                 </executions>
                 <configuration>
                     <serverId>nexus-snapshots</serverId>
-                    <nexusUrl>http://192.168.138.213:48001/nexus/</nexusUrl>
+                    <nexusUrl>http://local.nexus:48001/nexus/</nexusUrl>
                     <skipStaging>true</skipStaging>
                 </configuration>
             </plugin>
