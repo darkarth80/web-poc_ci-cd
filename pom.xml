@@ -9,9 +9,9 @@
     </parent>
 
     <groupId>com.softtek</groupId>
-    <artifactId>consume-web-service</artifactId>
+    <artifactId>web-poc_ci-cd</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>consume-web-service</name>
+    <name>Web page consuming a rest service.</name>
     <description>Demo project for Spring Boot</description>
     <packaging>war</packaging>
 
