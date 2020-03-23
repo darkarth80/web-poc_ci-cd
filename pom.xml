@@ -10,7 +10,7 @@
 
     <groupId>com.softtek</groupId>
     <artifactId>web-poc_ci-cd</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>0.0.2-SNAPSHOT</version>
     <packaging>war</packaging>
     
     <name>web-poc_ci-cd</name>
