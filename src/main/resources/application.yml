@@ -2,11 +2,20 @@ spring:
   application:
     name: Consume Web Service
      
-
 server:
   servlet:
-    context-path: /poc-web
-  port: 8081
+    context-path: /web-poc
+  port: 5002
 
 web:
-  url: http://localhost:8080/
+  protocol: http://
+  hostname: local.tomcat
+  port: null
+  context: ws-poc
+
+---
+spring:
+  profiles: lh
+
+web:
+  port: 5001

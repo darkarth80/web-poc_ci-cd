@@ -26,12 +26,9 @@ public class ConsumeWebServiceApplicationTest {
     @Test
     public void testConsumer() throws Exception {
         MockHttpServletRequestBuilder createMessage = get("/");
-        //.param("summary", "Spring Rocks")
-        //.param("text", "In case you didn't know, Spring Rocks!");
 
         mockMvc.perform(createMessage)
-        .andExpect(status().is2xxSuccessful())
-        .andExpect(redirectedUrl("/"));
+        .andExpect(status().is2xxSuccessful());
     }
 
 }
