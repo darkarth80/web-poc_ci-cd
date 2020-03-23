@@ -7,9 +7,9 @@
 </head>
 
 <body>
-    <p th:text="'Pais: ' + ${obj.pais}" />
-    <p th:text="'Oficina: ' + ${obj.oficina}" />
-    <p th:text="'Información: ' + ${obj.informacion}" />
+    <p>Pais: <span th:text="${obj.pais}" /> </p>
+    <p>Oficina: <span th:text="${obj.oficina}" /> </p>
+    <p>Información: <span th:text="${obj.informacion}" /> </p>
 </body>
 
 </html>
