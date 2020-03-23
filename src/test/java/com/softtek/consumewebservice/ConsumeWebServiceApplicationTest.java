@@ -22,13 +22,5 @@ public class ConsumeWebServiceApplicationTest {
 	public void homePage() throws Exception {
 		mockMvc.perform(get("/index.html"));
     }
-    
-    @Test
-    public void testConsumer() throws Exception {
-        MockHttpServletRequestBuilder createMessage = get("/");
-
-        mockMvc.perform(createMessage)
-        .andExpect(status().is2xxSuccessful());
-    }
 
 }
