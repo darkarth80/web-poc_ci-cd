@@ -65,12 +65,12 @@
     <distributionManagement>
         <repository>
             <id>nexus-snapshots</id>
-            <url>http://local.nexus:48001/repository/maven-releases/</url>
+            <url>http://host.docker.internal:48001/repository/maven-releases/</url>
         </repository>
         <snapshotRepository>
             <id>nexus-snapshots</id>
             <name>Nexus snapshots</name>
-            <url>http://local.nexus:48001/repository/maven-snapshots/</url>
+            <url>http://host.docker.internal:48001/repository/maven-snapshots/</url>
         </snapshotRepository>
     </distributionManagement>
 
@@ -96,7 +96,7 @@
                 </executions>
                 <configuration>
                     <serverId>nexus-snapshots</serverId>
-                    <nexusUrl>http://local.nexus:48001/nexus/</nexusUrl>
+                    <nexusUrl>http://host.docker.internal:48001/nexus/</nexusUrl>
                     <skipStaging>true</skipStaging>
                 </configuration>
             </plugin>
